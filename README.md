@@ -1,7 +1,8 @@
 ### Для установки плагинов выполнить команду
 
 ```bash
-git clone https://github.com/Chivirda/nvim-config.git ~/.config/nvim/lua/plugins/
-rm -rf ~/.config/nvim/lua/plugins/.git
+git clone https://github.com/Chivirda/nvim-config.git /tmp/nvim-config
+cp -r /tmp/nvim-config/* ~/.config/nvim/lua/plugins/
+rm -rf /tmp/nvim-config
 nvim
 ```
