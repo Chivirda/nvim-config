@@ -12,3 +12,8 @@ nvim
 ```bash
 sed -i '1s/^/-- /;s/colorscheme = "[^"]*"/colorscheme = "nightfox"/' ~/.config/nvim/lua/plugins/astroui.lua
 ```
+
+### Команда для активации переноса строк по словам
+```bash
+sed -i '1s/^/-- /' ~/.config/nvim/lua/polish.lua && echo -e "\nvim.opt.wrap = true\nvim.opt.linebreak = true\nvim.opt.breakindent = true" >> ~/.config/nvim/lua/polish.lua
+```
